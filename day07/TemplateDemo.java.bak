@@ -1,0 +1,43 @@
+/*
+需求：获取一段程序运行的时间
+原理：获取程序开始和结束的时间并相减即可。
+
+获取时间：System.currentTimeMillis();
+*/
+abstract class Gettime
+{
+	public final void getTime()
+	{
+		long start = System.currentTimeMillis();
+
+		runcode();
+
+		long end = System.currentTimeMillis();
+
+		System.out.println("毫秒: "+(end-start));
+	}
+	public abstract void runcode();
+}
+
+class Subtime extends Gettime
+{
+
+	public void runcode()
+	{
+		for(int x=0; x<4000; x++)
+		{
+			System.out.println(x);
+		}
+	}
+	
+}
+
+class TemplateDemo 
+{
+	public static void main(String[] args) 
+	{
+		//Gettime gt = new Gettime();
+		Subtime gt = new Subtime();
+		gt.getTime();
+	}
+}

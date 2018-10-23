@@ -1,0 +1,23 @@
+class Outer
+{
+	int x = 3;
+	void method()
+	{
+		final int y = 4;
+		class Inner  //局部内部类不能定义静态成员
+		{
+			void function()
+			{
+				System.out.println(y);
+			}
+		}
+		new Inner().function();
+	}
+}
+class InnerClassDemo3 
+{
+	public static void main(String[] args) 
+	{
+		new Outer.method();
+	}
+}

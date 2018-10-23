@@ -1,0 +1,24 @@
+/*
+¾²Ì¬µÄÓ¦ÓÃ
+*/
+class  Demo
+{
+	public static void main(String[] args) 
+	{
+		int[] arr = {3,4,1,8};
+
+		int max = getMax(arr);
+		System.out.println("max"=arr[max]);
+	}
+
+	public static int getMax(int[] arr)
+	{
+		int max = 0;
+		for(int x=1; x<arr.length; x++)
+		{
+			if(arr[x]>arr[max])
+				max = x;
+		}
+		return arr[max];
+	}
+}

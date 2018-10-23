@@ -1,0 +1,23 @@
+布尔型 boolean
+
+privata: 私有，权限修饰符：用于修饰类中的成员（成员变量、成员函数）。
+如：
+class Person
+{
+	private int age;
+}
+
+static 静态  修饰成员和成员函数  随着类的加载而加载
+
+abstract 抽象  抽象方法和抽象类必须被abstract修饰，抽象类不能用new创建对象
+
+extends 继承  
+
+super访问父类
+
+final 最终 不能改变的
+
+interface 接口
+
+implements 实现 类似于extends  但是他是用于interface
+
